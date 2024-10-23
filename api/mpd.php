@@ -8,7 +8,7 @@ $id = $_GET['id'] ?? exit;
 $channelInfo = getChannelInfo($id);
 $dashUrl = $channelInfo['streamData']['initialUrl'] ?? exit;
 
-if (strpos($dashUrl, 'https://bpprod') !== 0) {
+if (strpos($dashUrl, 'https://bpaita2') !== 0) {
     header("Location: $dashUrl");
     exit;
 }
